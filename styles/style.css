@@ -1,0 +1,232 @@
+
+    /* .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); } */
+
+/* ROOT =================================================== */
+*{
+    box-sizing: border-box;
+    --verde-marinho: hsl(172, 67%, 45%);
+    --verde-marinho-escuro: hsl(183, 100%, 15%);
+    --verde-marinho-cinzento: hsl(186, 14%, 43%);
+    --verde-marinho-cinzento2: hsl(184, 14%, 56%);
+    --verde-marinho-cinzento-claro: hsl(185, 41%, 84%);
+    --verde-marinho-cinzento-claro2: hsl(189, 41%, 97%);
+    --branco: hsl(0, 0%, 100%);
+}
+
+body{
+    background-color:  var(--verde-marinho-cinzento-claro);
+    position: relative;
+
+    font-family: 'Space Mono', monospace;
+}
+
+/* HEADER ================================================= */
+header{
+    text-align: center;
+
+}
+
+
+/* MAIN =================================================== */
+#conteiner{
+    background-color: var(--branco);
+
+    min-width: 300px;
+    max-width: 1200px;
+
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+
+    padding: 20px;
+
+    display: flex;
+}
+/* RIGHT ================================================== */
+#data{
+    padding: 20px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+#bill{
+    text-align: left;
+
+    padding: 10px;
+}
+
+#input-bill{
+    background: url(../images/icon-dollar.svg) no-repeat 10px;
+    background-color: var(--verde-marinho-cinzento-claro2);
+    padding: 10px;
+
+    width: 53vh;
+
+    border: none;
+    border-radius: 5px;
+
+    color: var(--verde-marinho-escuro);
+    font-weight: bold;
+    font-family: inherit;
+    font-size: 150%;
+    text-align: right;
+}
+
+#tip{
+    text-align: left;
+
+    padding: 10px;
+}
+
+#buttons{
+    display: grid;
+
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+
+    column-gap: 15px;
+    row-gap: 15px;
+}
+
+.btn{
+    background-color: var(--verde-marinho-escuro);
+
+    color: white;
+    font-family: inherit;
+    font-size: 150%;
+
+    border-radius: 5px;
+    border-style: none;
+
+    height: 40px;
+    width: 16vh;
+}
+
+.btn-selected{
+    background-color: var(--verde-marinho);
+
+    color: var(--verde-marinho-escuro);
+    font-weight: bold;
+    font-family: inherit;
+    font-size: 150%;
+
+    border-radius: 5px;
+    border-style: none;
+
+    height: 40px;
+    width: 16vh;
+}
+
+#btn-input{
+    background-color: var(--verde-marinho-cinzento-claro2);
+
+    color: grey;
+    font-weight: bold;
+    font-family: inherit;
+    font-size: 150%;
+    text-align: center;
+
+    border-radius: 5px;
+
+    height: 40px;
+    width: 16vh;
+    
+    border: none;
+}
+
+#people{
+    text-align: left;
+
+    padding: 10px;
+}
+
+#input-people{
+    background: url(../images/icon-person.svg) no-repeat 10px;
+    background-color: var(--verde-marinho-cinzento-claro2);
+    padding: 10px;
+
+    width: 53vh;
+
+    border: none;
+    border-radius: 5px;
+
+    color: var(--verde-marinho-escuro);
+    font-weight: bold;
+    font-family: inherit;
+    font-size: 150%;
+    text-align: right;
+}
+
+/* LEFT ================================================== */
+#result{
+    background-color: var(--verde-marinho-escuro);
+
+    width: 70vh;
+    height: 50vh;
+
+    padding: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    border-radius: 10px;
+}
+
+#numbers{
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    height: 20vh;
+
+}
+
+#amount, #total{
+    display: flex;
+    justify-content: space-between;
+}
+
+.pay{
+    font-family: inherit;
+    font-size: 250%;
+    font-weight: bold;
+    color: var(--verde-marinho);
+}
+
+#reset-btn{
+    background-color: var(--verde-marinho);
+
+    color: var(--verde-marinho-escuro);
+    font-family: inherit;
+    font-size: 150%;
+    font-weight: bold;
+
+    border-radius: 5px;
+    border-style: none;
+
+    height: 50px;
+    width: 50vh;
+}
+
+
+/* FOOTER ================================================= */
+footer{
+    text-align: center;
+}
+
+
+/* RESPONSIVE ============================================= */
+.btn:hover{
+    background-color: hsl(185, 41%, 84%);
+
+    color: black;
+
+    cursor: pointer;
+}

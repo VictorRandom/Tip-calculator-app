@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <link rel="stylesheet" href="./styles/style.css">
+
+</head>
+<body>
+
+  <header>
+    <img src="./images/logo.svg" alt="logo">
+  </header>
+
+  <main id="conteiner">
+      
+      <div id="data">
+        <div id="bill">
+          Bill </br>
+          <input type="number" id="input-bill">
+        </div>
+
+        <div id="tip">
+          Select Tip % <br>
+          <div id="buttons">
+            <button id="1" class="btn">5%</button>
+            <button id="2" class="btn">10%</button>
+            <button id="3" class="btn">15%</button>
+            <button id="4" class="btn">25%</button>
+            <button id="5" class="btn">50%</button>
+            <input type="text" id="btn-input" placeholder="Custom">
+          </div>
+        </div>
+
+        <div id="people">
+          Number of People <br>
+          <input type="number" id="input-people">
+        </div>
+      </div>
+
+      <div id="result">
+        <div id="numbers">
+          <div id="amount">
+              Tip Amount </br>
+              / person 
+              <div class="pay">$ 999</div>
+            </div>
+
+            <div id="total">
+              Total </br>
+              / person 
+              <div class="pay">$ 999</div>
+            </div>
+        </div>
+
+        <div id="reset">
+          <button id="reset-btn" onClick>RESET</button>
+        </div>
+      </div>
+
+  </main>
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/VictorRandom">Victor Miranda Balduino</a>.
+    </div>
+  </footer>
+
+  <script src="./scripts/script.js"></script>
+</body>
+</html>
